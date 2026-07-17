@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Student Management Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="glass">
+            <h1>Academic Report Dashboard</h1>
+        </header>
+
+        <!-- Dynamic Controls (Search & Filters) injected here by JS -->
+
+        <!-- Chart Area -->
+        <div class="dashboard-grid" id="chartContainer" style="display: none; margin-bottom: 2rem;">
+            <div class="stat-card glass">
+                <h5>Pass / Fail Distribution</h5>
+                <div style="position: relative; height: 180px; width: 100%;">
+                    <canvas id="passFailChart"></canvas>
+                </div>
+            </div>
+            <div class="stat-card glass">
+                <h5>Average Subject Marks</h5>
+                <div style="position: relative; height: 180px; width: 100%;">
+                    <canvas id="marksChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Student Grid -->
+        <main class="students-grid" id="studentsGrid">
+            <div style="text-align: center; padding: 5rem;">
+                <h2>Loading Live Data...</h2>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

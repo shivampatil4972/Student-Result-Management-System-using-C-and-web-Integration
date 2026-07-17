@@ -1,0 +1,11 @@
+# Build outputs
+output/
+*.exe
+*.o
+
+# Databases
+*.db
+*.db-journal
+
+# VSCode settings
+.vscode/
